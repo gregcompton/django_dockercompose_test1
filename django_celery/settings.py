@@ -13,12 +13,14 @@ ev = os.environ
 for v in ev:
     print(f'{v}: {ev[v]}')
 
+print(f'\n********************\nTESTVAR: {os.environ.get("TESTVAR")}\n******************** ')
+
 SECRET_KEY = os.environ.get('SECRET_KEY')
-print(f'\n********************\nSECRET_KEY: {SECRET_KEY} | {type(SECRET_KEY)}')
+# print(f'\n********************\nSECRET_KEY: {SECRET_KEY} | {type(SECRET_KEY)}')
 DEBUG = os.environ.get('DEBUG')
-print(f'\n********************\nDEBUG: {DEBUG} | {type(DEBUG)}')
+# print(f'\n********************\nDEBUG: {DEBUG} | {type(DEBUG)}')
 test = os.environ.get('ALLOWED_HOSTS')
-print(f'\n********************\ntest ALLOWED_HOSTS: {test} | {type(test)}')
+# print(f'\n********************\ntest ALLOWED_HOSTS: {test} | {type(test)}')
 ALLOWED_HOSTS = os.environ.get("ALLOWED_HOSTS").split(",")
 # ALLOWED_HOSTS= ["localhost","127.0.0.1"]
 

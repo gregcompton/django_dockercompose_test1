@@ -15,7 +15,7 @@ ENV PATH="/py/bin:$PATH"
 ENV DEBUG="1"
 ENV SECRET_KEY="mysecretkey"
 ENV ALLOWED_HOSTS=localhost,127.0.0.1
-#RUN chmod +x ./entrypoint.sh
+RUN chmod +x ./entrypoint.sh
 
 COPY ./entrypoint.sh /usr/src/app/entrypoint.sh
 

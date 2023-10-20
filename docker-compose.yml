@@ -12,7 +12,8 @@ services:
       - .:/user/src/app/
     ports:
       - 8001:8000
-#    environment:
+    environment:
+      - TESTVAR=5
 #      - DEBUG=1
 #      - SECRET_KEY=thissecretkey
 #      - ALLOWED_HOSTS=localhost,127.0.0.1
