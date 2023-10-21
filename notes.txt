@@ -1,0 +1,20 @@
+This tutorial
+Very Academy Docker Mastery with Django
+https://www.youtube.com/playlist?list=PLOLrQ9Pn6cazCfL7v4CdaykNoWMQymM_C
+
+
+Docker Compose commands
+Linux Ubuntu 20.0.4:
+Get the project source code from github:
+    - Initial: git clone <github project url>
+    - Update: git pull <github project url>
+    - Note: do this with SSH for live project. Find and link tutorial.
+Build the container using docker compose:
+	- navigate to the folder with the .yml file
+	- enter -> docker compose up
+	- everything should work?
+
+
+
+on LINUX entrypoint.sh may need permissions
+chmod +x ./entrypoint

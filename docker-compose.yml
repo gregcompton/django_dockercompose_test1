@@ -1,18 +1,12 @@
-version: '3.8'
+version: "3.8"
 
 services:
-
-  django:
-    image: gregcompton/django_dockercompose_3
-    container_name: django
-    build:
-      context: .
-    command: python manage.py runserver 0.0.0.0:8000
+  app:
+    build: .
     volumes:
-      - .:/user/src/app/
+      - .:/django
     ports:
-      - 8001:8000
-    environment:
-      - DEBUG=1
-      - SECRET_KEY=thissecretkey
-      - ALLOWED_HOSTS=localhost,127.0.0.1
+      - 8000:8000
+    image: app:django
+    container_name: django_container
+    command: python manage.py runserver 0.0.0.0:8000
