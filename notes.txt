@@ -15,6 +15,13 @@ Build the container using docker compose:
 	- everything should work?
 
 
+Part#3 commands:
+docker compose build #build the app from .yml
+docker compose run --rm app django-admin startproject core .  #build the container. stop it. execute command line action
+docker compose up #start the container
+docker exec -it django_container /bin/bash #open a terminal inside the container to apply initial db migrations
+<in container> python manage.py migrate
+
 
 on LINUX entrypoint.sh may need permissions
 chmod +x ./entrypoint
